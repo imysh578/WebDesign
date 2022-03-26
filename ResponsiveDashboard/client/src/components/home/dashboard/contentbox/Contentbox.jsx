@@ -21,7 +21,7 @@ export const Contentbox = () => {
         </div>
         <div className="box box3">
           <i class="uil uil-share"></i>
-          <span className="text">Total Likes</span>
+          <span className="text">Total Share</span>
           <span className="number">23,232</span>
         </div>
       </div>

@@ -23,9 +23,9 @@ export const Home = ({children}) => {
   }, [])
 
   return (
-    <section className="home">
-      <Searchbar/>
-      {children}
-    </section>
-  );
+		<section className="home">
+			<Searchbar/>
+			{children}
+		</section>
+	);
 }
