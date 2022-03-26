@@ -1,15 +1,26 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Navbar.css"
 
 export const Navbar = () => {
+  
   useEffect(() => {
     const body = document.querySelector("body");
     const modeToggle = document.querySelector(".mode-toggle");
+    
+    let getDarkMode = localStorage.getItem("dark_mode");
+    if (getDarkMode && getDarkMode === "on") {
+      body.classList.toggle("dark");
+    }
   
     modeToggle.addEventListener("click", () => {
       body.classList.toggle("dark")
+      if(body.classList.contains("dark")) {
+        localStorage.setItem("dark_mode", "on")
+      } else {
+        localStorage.setItem("dark_mode", "off")
+      }
     })
-  })
+  }, [])
   return (
     <nav>
       <div className="logo-name-container">

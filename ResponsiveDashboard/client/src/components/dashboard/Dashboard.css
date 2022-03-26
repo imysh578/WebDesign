@@ -4,8 +4,8 @@
   position: relative;
   left: 250px;
   background-color: var(--panel-color);
-  height: 100vh;
   width: calc(100% - 250px);
+  min-height: 100vh;
   padding: 10px 14px;
   transition: var(--tran-05);
 }

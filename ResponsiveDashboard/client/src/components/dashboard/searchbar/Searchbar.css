@@ -1,4 +1,4 @@
-.searchbar{
+.dashboard .searchbar{
   position: fixed;
   top: 0;
   left: 250px;
@@ -11,7 +11,6 @@
   transition: var(--tran-05);
 }
 nav.close ~ .dashboard .searchbar {
-  background-color: red;
   left: 73px;
   width: calc(100% - 73px);
 }
