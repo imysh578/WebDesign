@@ -1,9 +1,9 @@
 import React from 'react'
 import { Activity } from './activity/Activity'
 import { Contentbox } from './contentbox/Contentbox'
-import "./Dashcontent.css"
+import "./Dashboard.css"
 
-export const Dashcontent = () => {
+export const Dashboard = () => {
   return (
     <div className='dash-content'>
       <div className="overview">

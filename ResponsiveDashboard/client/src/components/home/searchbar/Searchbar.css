@@ -1,4 +1,4 @@
-.dashboard .searchbar{
+.home .searchbar{
   position: fixed;
   top: 0;
   left: 250px;
@@ -10,7 +10,7 @@
   background-color: var(--panel-color);
   transition: var(--tran-05);
 }
-nav.close ~ .dashboard .searchbar {
+nav.close ~ .home .searchbar {
   left: 73px;
   width: calc(100% - 73px);
 }

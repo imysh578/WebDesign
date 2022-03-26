@@ -1,21 +1,21 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Dashboard } from './components/dashboard/Dashboard';
-import { Dashcontent } from './components/dashboard/dashcontent/Dashcontent';
+import { Home } from './components/home/Home';
+import { Dashboard } from './components/home/dashboard/Dashboard';
 import { Navbar } from './components/navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Dashboard>
+      <Home>
         <Routes>
           <Route path='/'>
-            <Route index element={<Dashcontent/>}/>
-            <Route path='dashboard' element={<Dashcontent/>}/>
+            <Route index element={<Dashboard/>}/>
+            <Route path='dashboard' element={<Dashboard/>}/>
           </Route>
         </Routes>
-      </Dashboard>
+      </Home>
     </div>
   );
 }

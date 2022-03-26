@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.dashboard {
+.home {
   position: relative;
   left: 250px;
   background-color: var(--panel-color);
@@ -9,7 +9,7 @@
   padding: 10px 14px;
   transition: var(--tran-05);
 }
-nav.close ~ .dashboard {
+nav.close ~ .home {
   left: 73px;
   width: calc(100% - 73px);
 }
