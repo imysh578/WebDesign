@@ -1,4 +1,4 @@
-.searchbar{
+.dashboard .searchbar{
   position: fixed;
   top: 0;
   left: 250px;
@@ -10,16 +10,17 @@
   background-color: var(--panel-color);
   transition: var(--tran-05);
 }
-.nav.close ~ searchbar {
+nav.close ~ .dashboard .searchbar {
+  background-color: red;
   left: 73px;
   width: calc(100% - 73px);
 }
-.searchbar .sidebar-toggle {
+.dashboard .searchbar .sidebar-toggle {
   font-size: 26px;
   color: var(--text-color);
   cursor: pointer;
 }
-.searchbar .search-box {
+.dashboard .searchbar .search-box {
   position: relative;
   height: 45px;
   max-width: 600px;
