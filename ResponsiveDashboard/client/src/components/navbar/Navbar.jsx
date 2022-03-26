@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import "./Navbar.css"
 
 export const Navbar = () => {
@@ -34,56 +35,56 @@ export const Navbar = () => {
       <div className="menu-items">
         <ul className="nav-links">
           <li>
-            <a href="/">
+            <Link to="/dashboard">
               <i class="uil uil-estate"></i>
               <span className="link-name">Dashboard</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="/content">
               <i class="uil uil-files-landscapes"></i>
               <span className="link-name">Content</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="#">
               <i class="uil uil-chart"></i>
               <span className="link-name">Analystics</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="#">
               <i class="uil uil-thumbs-up"></i>
               <span className="link-name">Like</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="#">
               <i class="uil uil-comment-dots"></i>
               <span className="link-name">Comments</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="#">
               <i class="uil uil-share"></i>
               <span className="link-name">Share</span>
-            </a>
+            </Link>
           </li>
         </ul>
 
         <ul className="logout-mode">
           <li>
-            <a href="/">
+            <Link to="#">
               <i class="uil uil-signout"></i>
               <span className="link-name">Logout</span>
-            </a>
+            </Link>
           </li>
 
           <li className="mode">
-            <a href="/">
+            <Link to="#">
               <i class="uil uil-moon"></i>
               <span className="link-name">Dark Mode</span>
-            </a>
+            </Link>
             <div className="mode-toggle">
               <span className="switch"></span>
             </div>

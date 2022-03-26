@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react'
 import { Searchbar } from './searchbar/Searchbar';
-import { Dashcontent } from './dashcontent/Dashcontent';
 import "./Dashboard.css"
 
-export const Dashboard = () => {
+export const Dashboard = ({children}) => {
   useEffect(() => {
     const sidebarToggle = document.querySelector(".sidebar-toggle");
     const sidebar = document.querySelector("nav");
@@ -26,7 +25,7 @@ export const Dashboard = () => {
   return (
     <section className="dashboard">
       <Searchbar/>
-      <Dashcontent/>
+      {children}
     </section>
   );
 }
