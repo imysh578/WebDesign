@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.home {
+.main {
   position: relative;
   left: 250px;
   background-color: var(--panel-color);
@@ -10,7 +10,7 @@
   transition: var(--tran-05);
 }
 
-nav.close~.home {
+nav.close~.main {
   left: 73px;
   width: calc(100% - 73px);
 }

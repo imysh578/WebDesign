@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { Searchbar } from './searchbar/Searchbar';
-import "./Home.css"
+import "./Main.css"
 
-export const Home = ({children}) => {
+export const Main = ({children}) => {
   useEffect(() => {
     const sidebarToggle = document.querySelector(".sidebar-toggle");
     const sidebar = document.querySelector("nav");
@@ -23,7 +23,7 @@ export const Home = ({children}) => {
   }, [])
 
   return (
-		<section className="home">
+		<section className="main">
 			<Searchbar/>
 			{children}
 		</section>
