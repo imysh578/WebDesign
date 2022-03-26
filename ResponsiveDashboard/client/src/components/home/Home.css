@@ -6,10 +6,11 @@
   background-color: var(--panel-color);
   width: calc(100% - 250px);
   min-height: 100vh;
-  padding: 10px 14px;
+  padding: 10px 30px;
   transition: var(--tran-05);
 }
-nav.close ~ .home {
+
+nav.close~.home {
   left: 73px;
   width: calc(100% - 73px);
 }

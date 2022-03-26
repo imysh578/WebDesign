@@ -10,8 +10,9 @@ export const Searchbar = () => {
         <i class="uil uil-search"></i>
         <input type="text" placeholder="Search here..." />
       </div>
-
-      <img src="profile.jpg" alt="profile" />
+      <div className="profile">
+        <img src="profile.jpg" alt="profile" />
+      </div>
     </div>
   );
 }
