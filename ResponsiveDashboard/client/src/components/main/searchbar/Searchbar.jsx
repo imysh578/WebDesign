@@ -11,7 +11,7 @@ export const Searchbar = () => {
         <input type="text" placeholder="Search here..." />
       </div>
       <div className="profile">
-        <img src="profile.jpg" alt="profile" />
+        <img src="images/profile.jpg" alt="profile" />
       </div>
     </div>
   );

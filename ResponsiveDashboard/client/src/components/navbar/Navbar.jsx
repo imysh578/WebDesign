@@ -27,7 +27,7 @@ export const Navbar = () => {
 			<Link to={"/"}>
 				<div className="logo-name-container">
 					<div className="logo-image">
-						<img src="Musit_logo.png" alt="logo" />
+						<img src="images/Musit_logo.png" alt="logo" />
 					</div>
 
 					<span className="logo-name nav-links">MUSIT</span>

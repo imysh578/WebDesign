@@ -3,11 +3,12 @@ import "./Contentbox.css"
 
 export const Contentbox = () => {
   return (
-    <>
+    <div className='contentbox'>
       <div className="title">
         <i class="uil uil-create-dashboard"></i>
         <span className="text">Dashboard</span>
       </div>
+
       <div className="boxes">
         <div className="box box1">
           <i class="uil uil-thumbs-up"></i>
@@ -25,6 +26,6 @@ export const Contentbox = () => {
           <span className="number">23,232</span>
         </div>
       </div>
-    </>
+    </div>
   )
 }
